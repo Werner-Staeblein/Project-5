@@ -7,6 +7,6 @@ streamlit==1.40.1
 feature-engine==1.0.2
 joblib==1.4.2
 scikit-learn==1.0.2
-wheel==0.40.3
+wheel
 ppscore==1.1.1
 
