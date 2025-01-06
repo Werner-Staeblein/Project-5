@@ -7,7 +7,5 @@ streamlit==1.40.1
 feature-engine==1.0.2
 joblib==1.4.2
 scikit-learn==1.5.1
-xgboost==2.1.2
-protobuf==4.25.5
 setuptools==65.5.0
 wheel==0.40.0
