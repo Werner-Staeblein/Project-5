@@ -459,6 +459,7 @@ Steps for deployment on Heroku are:
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
+
 ## 12. Packages and technologies used
                                                            
 ### Technologies used:
