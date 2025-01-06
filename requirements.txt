@@ -9,4 +9,5 @@ joblib==1.4.2
 scikit-learn==0.24.2
 wheel
 ppscore==1.1.1
+Cython==0.29.24
 
