@@ -419,6 +419,7 @@ SalePrice and each (important) created different types of plots
 https://app.slack.com/client/T0L30B202/C02NH8VL28G
 
 
+
 ## 10. Manual Testing
 
 ### Widget input testing
