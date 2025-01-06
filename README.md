@@ -2,8 +2,6 @@
 
 This project aims to understand and predict house prices by analyzing various factors that contribute to the sale price. We explore the relationships between house attributes and sale prices using statistical techniques like correlation analysis. Through this investigation, we aim to validate specific hypotheses and uncover key drivers that influence house prices in Ames, Iowa.
 
-**<span style="color:red;">Reminder: insert the Techsini picture here once the dashboard is deployed**</span>
-
 # Table of Contents
 - [Table of Contents](#table-of-contents)
   - [1. Dataset Content](#1-dataset-content)
@@ -37,8 +35,6 @@ This project aims to understand and predict house prices by analyzing various fa
     - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
   - [Credits](#credits)
     - [Code](#code)
-    - [Content](#content)
-    - [Media](#media)
   - [Acknowledgements (optional)](#acknowledgements-optional)
 
 ## 1. Dataset Content
@@ -78,7 +74,6 @@ This project aims to understand and predict house prices by analyzing various fa
 * **Sale price** is the market price of a house with features represented by the list of features for the respective house. 
 * **inherited house** is a house that the client inherited from grandparents that needs evaluation of market price
 * **summed price** is total sum of all predicted market prices of all four houses that the client inherited
-
 
 ## 2. Business Requirements
 
@@ -179,7 +174,6 @@ We suspect that the overall condition of a house will influence the sale price. 
 
 o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as 'YearBuilt' and 'YearRemodAdd' that reflect overall condition have proven to be meaningfully correlated in correlation study</span>
 
-
 ## 4. Rationale to map the business requirements to the Data Visualisations and ML tasks
 
 * List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
@@ -196,7 +190,6 @@ o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis conf
 - The target variable (house price) is continuous. Therefore, a regression analysis is conducted to address the business requirement. If a regression model proves to perform poorly on required metrics, a classification analysis can be done
 - The business requirement is addressed in this notebook: **[ML Modeling](jupyter_notebooks\05_ml_model_and_evaluation.ipynb)**
 - The ML task will be to forecast house sale prices based on attributes of houses provided. The ML task is achieved by using the key features determined such as OverallQual, GrLivArea or GarageArea
-
 
 ## 5. ML Business Case
 
@@ -279,7 +272,7 @@ This project uses the CRISP-DM ("CRoss Industry Standard Process for Data Mining
 
 A data cleaining pipeline was prepared to address missing values. 
 
-Continuous Variables such as ['LotFrontage'] and ['BedroomAbvGr#] with missing values have been imputed with the mean as there were
+Continuous Variables such as ['LotFrontage'] and ['BedroomAbvGr'] with missing values have been imputed with the mean as there were
 no large outliers and to keep the imputed values with the range of observed values in the dataset.
 
 Continuous Variables with skewness in the data such as ['2ndFlrSF'] and ['MasVnrAreaand'] with missing values have been imputed with the median. 
@@ -422,7 +415,7 @@ SalePrice and each (important) created different types of plots
 
 ## 9. Unfixed Bugs
 
-
+https://app.slack.com/client/T0L30B202/C02NH8VL28G
 
 ## 10. Manual Testing
 
@@ -478,17 +471,17 @@ Steps for deployment on Heroku are:
            
 **[Visual Studio Code](https://code.visualstudio.com/)** Visual Studio Code (VS-Code) was used as integrated development environment (IDE) for the entire project. The GitHub repository was cloned to VS-Code for this purpose	
 
-
 ### Main Data Analysis and Machine Learning Libraries											
 
 The version number of the libraries used can be found in the **[requirements file](https://github.com/Werner-Staeblein/Project-5/blob/main/requirements.txt)** of this project
 
 **[Feature Engine 1.0.2](https://feature-engine.trainindata.com/en/latest/)** Feature-engine is a Python library with multiple transformers to engineer and select features for machine learning models
 
-**[Jupiter Notebooks](https://jupyter.org/)** Open-source web app to create and share documents                                                  
+**[Jupiter Notebooks](https://jupyter.org/)** Open-source web app to create and share documents
+
 **[Kaggle 1.6.12](https://pypi.org/project/kaggle/)** Tool for download of dataset from Kaggle
                                                      
-**[Matplotlib 3.4.3](https://matplotlib.org/)** Data visualisation library for correlation analysis and creation of plots													
+**[Matplotlib 3.4.3](https://matplotlib.org/)** Data visualisation library for correlation analysis and creation of plots
                                                          
 **[Numpy 1.19.5](https://numpy.org/)** Library for computing, providing a collection of mathematical functions to work on arrays
 
@@ -524,7 +517,6 @@ The following functions from CI training videos on ML and walkthrough project 2 
 * Evaluation of regressor pipeline (regression_performance(), regression_evaluation(), regression_evaluation_pluts() from CI Scikit-Learn Unit 3)
 * Function PipelineOptimization() with multiple optimizations from CI walkthrough project and CI Scikit-Learn Unit 6
 
-
 The following resources were used to better understand the different steps of the ML pipeline or statistical concepts
 
 **[ML-Mastery](https://machinelearningmastery.com/feature-relationships-101/)** This article provided me a good overview over the relationships
@@ -533,14 +525,6 @@ of features in the Ames Housing dataset.
 The book "Statistics for business and economics" by Anderson/Sweeney/Williams, 7th edition, 1999. Even though this seems a "dated" source the
 statistical concepts for Multiple Regression and Regression Analysis are explained well in this book, thus improving my overall understanding how to address
 the underlying project goal
-
-### Content
-
-
-
-### Media
-
-* The image used at the start of the README was created with the Multi Device Website Mockup generator Techsini
 
 ## Acknowledgements (optional)
 
