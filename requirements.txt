@@ -9,5 +9,5 @@ joblib==1.4.2
 scikit-learn==1.5.1
 setuptools==65.5.0
 wheel==0.40.0
-ppscore==1.2.1
+ppscore==1.1.1
 
