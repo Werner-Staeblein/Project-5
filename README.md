@@ -28,7 +28,10 @@ The project is deployed here: **[Deployed Project](https://ameshouseproject-2e20
   - [Page 3: House Price Predictor Page](#page-3-house-price-predictor-page)
   - [Page 4: Hypothesis](#page-4-hypothesis)
   - [Page 5: Technical Page | Model Performance Page](#page-5-technical-page--model-performance-page)
-  - [9. Unfixed Bugs](#9-unfixed-bugs)
+  - [9. Fixed Bugs | Deployment challenges](#9-fixed-bugs--deployment-challenges)
+    - [Seeking advice](#seeking-advice)
+    - [What was the key reason for the bug(s)?](#what-was-the-key-reason-for-the-bugs)
+    - [Lessons Learned](#lessons-learned)
   - [10. Manual Testing](#10-manual-testing)
     - [Widget input testing](#widget-input-testing)
     - [Sanity Check on Regression Model](#sanity-check-on-regression-model)
@@ -415,11 +418,22 @@ o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis conf
 - Display model performance
 - Display ML pipeline steps  
 
-## 9. Unfixed Bugs
+## 9. Fixed Bugs | Deployment challenges
 
-https://app.slack.com/client/T0L30B202/C02NH8VL28G
+I had significant problems deploying the application. Locally on my computer, the Streamlit app worked well. However, deploying it on Heroku proved to be a major challenge. The history of the commit messages shows that I had to experiment extensively with different variations in the `requirements.txt` file to resolve package conflicts.
 
+I did start PP-5 initially with deployment of the streamlit app. So, even before starting the pipeline and working on the machine learning model and underlying business requirements, I did inititate the project with deployment tests as I was fully aware and advised earlier that deployment could prove to be the bottleneck and issue. Unfortunately, the approach of starting off with deployment has not avoided completeley all the work necessary to run the streamlit app in heroku.
 
+### Seeking advice
+I exchanged information with the CI student support team on Slack: **[Slack exchange with student support](https://app.slack.com/client/T0L30B202/C02NH8VL28G)**
+
+### What was the key reason for the bug(s)?
+In my view, the deployment issues were primarily related to the fact that I had to update the machine learning model (Notebook 5) again using the locally installed version of `scikit-learn` and to ensure that `requirements.txt` includes exactly the packages I used to train the model. Debugging the deployment problems was extremely time-consuming and could only be resolved through trial and error.
+
+### Lessons Learned
+- While some information about Heroku error messages was readily available online, solving the deployment issues often required extensive notes and analysis.
+- I focused on understanding which package versions in the `requirements.txt` file were incompatible with others and systematically addressed the conflicts.
+- Despite the struggles on deployment, I will nevertheless continue to work on deployment at every start of every project and continue with my personal habit of cross-checking deployment while working on a project.
 
 
 ## 10. Manual Testing
