@@ -2,6 +2,10 @@
 
 This project aims to understand and predict house prices by analyzing various factors that contribute to the sale price. We explore the relationships between house attributes and sale prices using statistical techniques like correlation analysis. Through this investigation, we aim to validate specific hypotheses and uncover key drivers that influence house prices in Ames, Iowa.
 
+![Multi Device Mockup](docs/readmescreenshots/techsini_screenshot_pp5.png)
+
+The project is deployed here: **[Deployed Project](https://ameshouseproject-2e20e722aa63.herokuapp.com/)**
+
 # Table of Contents
 - [Table of Contents](#table-of-contents)
   - [1. Dataset Content](#1-dataset-content)
@@ -35,11 +39,12 @@ This project aims to understand and predict house prices by analyzing various fa
     - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
   - [Credits](#credits)
     - [Code](#code)
+    - [Media](#media)
   - [Acknowledgements (optional)](#acknowledgements-optional)
 
 ## 1. Dataset Content
 
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). Fictitious user stories were created where predictive analytics can be applied in a real project in the workplace.
+* The dataset is sourced from **[Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data)**. Fictitious user stories were created where predictive analytics can be applied in a real project in the workplace.
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
@@ -158,21 +163,15 @@ Larger properties tend to have higher absolute sale prices.
 
 - We will investigate correlations between attributes related to house size (e.g., square footage, number of bedrooms) and sale price to validate this hypothesis.
 
-o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as '1stFlrSF', 'GarageArea', 'GrLivArea' 'TotalBsmtSF' proven to be meaningfully correlated in correlation study</span>
-
 2.	Overall Quality Hypothesis:
 We suspect that the overall quality of a house will significantly impact the sale price. The higher the quality rating, the higher the expected sale/market price.
 
 - We will investigate correlations between attributes related to the quality assessment of the house such as 'OverallQual' or 'KitchenQual' to validate the hypothesis
 
-o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as 'KitchenQual_TA' and 'OverallQual' proven to be meaningfully correlated in correlation study</span>
-
 3.	Overall Condition Hypothesis:
 We suspect that the overall condition of a house will influence the sale price. Houses in better condition should command a higher price.
 
 - We will investigate the data on the 'YearBuilt' or 'YearRemodAdd' to validate this hypothesis.
-
-o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as 'YearBuilt' and 'YearRemodAdd' that reflect overall condition have proven to be meaningfully correlated in correlation study</span>
 
 ## 4. Rationale to map the business requirements to the Data Visualisations and ML tasks
 
@@ -333,17 +332,12 @@ The project has 2 business requirements:
 <img src="docs/readmescreenshots/project_overview_page.png">
 </details>
 
-
 ## Page 2: Correlation Page
 
-**<span style="color:red;">Reminder: Remove 3 bullet points marked with [Done] once correlation page checked for final/final**</span>
-
-  - Describe the business requirement No. 1 [DONE]
-  - Show findings which features have the strongest correlation to house sale price (most important features correlation) [DONE]
-  - Include visualisations of correlations with scatter plots of those variables that have a high correlation to the sale price. Enable dashboard user to analyze data visually [DONE]
-
+![Screenshot Correlation Page](docs/readmescreenshots/screenshot_correlation_page_pp5.png)
 
 This page shows
+
 * the business requirement that was handled by the BR1 (correlation study)
 * a checkbox that displays the dataset ("Inspect house data from the area")
 * analytical conclusions about the features that have strongest correlation with the target (house sale price)
@@ -407,7 +401,14 @@ SalePrice and each (important) created different types of plots
 
 ## Page 4: Hypothesis
 
-- Display the project hypothesis and the hypothesis were validated across the project 
+- Display the project hypothesis and the hypothesis were validated across the project
+
+o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as '1stFlrSF', 'GarageArea', 'GrLivArea' 'TotalBsmtSF' proven to be meaningfully correlated in correlation study</span>
+
+o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as 'KitchenQual_TA' and 'OverallQual' proven to be meaningfully correlated in correlation study</span>
+
+o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as 'YearBuilt' and 'YearRemodAdd' that reflect overall condition have proven to be meaningfully correlated in correlation study</span>
+
 
 ## Page 5: Technical Page | Model Performance Page
 
@@ -530,6 +531,10 @@ of features in the Ames Housing dataset.
 The book "Statistics for business and economics" by Anderson/Sweeney/Williams, 7th edition, 1999. Even though this seems a "dated" source the
 statistical concepts for Multiple Regression and Regression Analysis are explained well in this book, thus improving my overall understanding how to address
 the underlying project goal
+
+### Media
+
+The image used at the start of the README was created with Mult Device Website Mockup generator Techsini
 
 ## Acknowledgements (optional)
 
