@@ -461,9 +461,9 @@ This approach of "heuristically" cross-checking the regression outcomes helps en
 
 The project was deployed to Heroku
 
-* The App live link is: [**Heritage Housing Project**](https://housingappraisal-be85af0a7e82.herokuapp.com/)
+* The App live link is: [**Heritage Housing Project**](https://ameshouseproject-2e20e722aa63.herokuapp.com/)
 
-* Set the runtime.txt Python version to a **[Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes)** stack currently supported version (3.8.19).
+* Set the Python version to 3.9.12 in your runtime.txt. With this python version you can use the Heroku-24 stack.
 
 Steps for deployment on Heroku are:
 
@@ -472,8 +472,7 @@ Steps for deployment on Heroku are:
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
+6. If the slug size is too large then add large files not required for the app to the .slugignore file. The code in this project has a sufficiently slug size for the application to be deployed with no problems.
 
 ## 12. Packages and technologies used
                                                            
@@ -497,27 +496,35 @@ The version number of the libraries used can be found in the **[requirements fil
 
 **[Feature Engine 1.0.2](https://feature-engine.trainindata.com/en/latest/)** Feature-engine is a Python library with multiple transformers to engineer and select features for machine learning models
 
+**[Imbalanced-learn](https://pypi.org/project/imbalanced-learn/)** used to handle improve model performance in deployed machine learning projects.  
+
+**[Joblib >=1.2.0](https://pypi.org/project/joblib/)** used for efficient serialization and deserialization of machine learning models and pipelines for deployment.
+
 **[Jupiter Notebooks](https://jupyter.org/)** Open-source web app to create and share documents
 
 **[Kaggle 1.6.12](https://pypi.org/project/kaggle/)** Tool for download of dataset from Kaggle
                                                      
-**[Matplotlib 3.4.3](https://matplotlib.org/)** Data visualisation library for correlation analysis and creation of plots
+**[Matplotlib 3.3.1](https://matplotlib.org/)** Data visualisation library for correlation analysis and creation of plots
                                                          
-**[Numpy 1.19.5](https://numpy.org/)** Library for computing, providing a collection of mathematical functions to work on arrays
+**[Numpy 1.26.4](https://numpy.org/)** Library for computing, providing a collection of mathematical functions to work on arrays
 
-**[Pandas 1.3.5](https://pandas.pydata.org/)** Library to convert the source data into a DataFrame. Used for data management, data manipulation, and analysis of data structures
+**[Pandas 1.5.3](https://pandas.pydata.org/)** Library to convert the source data into a DataFrame. Used for data management, data manipulation, and analysis of data structures
 
 **[Pandas Profiing](https://pypi.org/project/pandas-profiling/)** is a tool that generates detailed reports of DataFrame structure with information about feature type, distribution, missing values, and correlations. Used in data_cleaning and correlation_study
 
-**[Ppscore 1.2.0](https://pypi.org/project/ppscore/)** used to calculate relationships between feature pairs in the dataset and Predictive Power Score Analysis
+**[Plotly 5.24.0](https://pypi.org/project/plotly/)** used to create graphs for exploring and presenting machine learning results in a deployed application.  
+
+**[Ppscore 1.3.0](https://pypi.org/project/ppscore/)** used to calculate relationships between feature pairs in the dataset and Predictive Power Score Analysis
 
 **[Python](https://www.python.org/)** Python is an interpreted, high-level and general purpose programming language
 
-**[Seaborn 0.11.2](https://seaborn.pydata.org/)** Data visualization library. Used to prepare statistical graphs such as heatmaps. Library expands the functionalities of matplot-lib
+**[Seaborn 0.11.0](https://seaborn.pydata.org/)** Data visualization library. Used to prepare statistical graphs such as heatmaps. Library expands the functionalities of matplot-lib
 
-**[Scikit-learn 0.24.2](https://scikit-learn.org/stable/index.html)** used to train and evaluate the ML model. Training with Scikit-learn includes corss validation and hyperparameter optimisation to identify the best model and to determine the best parameters for model performance
+**[Scikit-learn 1.5.1](https://scikit-learn.org/stable/index.html)** used to train and evaluate the ML model. Training with Scikit-learn includes corss validation and hyperparameter optimisation to identify the best model and to determine the best parameters for model performance
 
-**[Streamlit 0.88.0](https://streamlit.io/)** Open-source library to create and share we applications for machine learning and data science projects. Used to create the dashboard to display separate pages of the project and interactive page with widgets for prediction of a house sale price
+**[Streamlit 1.40.1](https://streamlit.io/)** Open-source library to create and share we applications for machine learning and data science projects. Used to create the dashboard to display separate pages of the project and interactive page with widgets for prediction of a house sale price
+
+**[XGBoost 1.2.1](https://pypi.org/project/xgboost/)** used to build gradient boosting models to ensure accurate predictions in a deployed machine learning application.  
 
 ## Credits
 
