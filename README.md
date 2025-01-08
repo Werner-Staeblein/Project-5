@@ -21,6 +21,8 @@ The project is deployed here: **[Deployed Project](https://ameshouseproject-2e20
   - [7. Data Preprocessing](#7-data-preprocessing)
     - [Data Cleaning Pipeline](#data-cleaning-pipeline)
     - [Feature Engineering](#feature-engineering)
+      - [Categorical encoding](#categorical-encoding)
+      - [Numerical Transformation](#numerical-transformation)
   - [8. Dashboard Design](#8-dashboard-design)
   - [Page 1: Quick Project Summary | Opening Page of the Dashboard](#page-1-quick-project-summary--opening-page-of-the-dashboard)
   - [Page 2: Correlation Page](#page-2-correlation-page)
@@ -43,7 +45,8 @@ The project is deployed here: **[Deployed Project](https://ameshouseproject-2e20
   - [Credits](#credits)
     - [Code](#code)
     - [Media](#media)
-  - [Acknowledgements (optional)](#acknowledgements-optional)
+    - [**Content**](#content)
+  - [Acknowledgements](#acknowledgements)
 
 ## 1. Dataset Content
 
@@ -291,11 +294,24 @@ of these features have a substantial number of missing values. Imputing from a l
 of missing observations (around 90%) lkely distorts the dataset. In addition, the features dropped likely do not have a high predictive
 power for the target as defined in the analtiyical hypothesis.
 
-Further explanations on the analytical rationale to address the missing data in the dataset can be found in the file 02_data_cleaning.ipynb.
-
+Further explanations on the analytical rationale to address the missing data in the dataset can be found in the file **[Data Cleaning](jupyter_notebooks\02_data_cleaning.ipynb)**
+ 
 ### Feature Engineering
 
-**<span style="color:red;">Reminder: Encoding and Transformation of fetures to be included here**</span>
+#### Categorical encoding
+
+Categorical encoding was used to convert ordinal categories into numerical values. This keeps the order of the categories and the relative hierarchy
+was included in the regression analysis. Most of the ordinal categories, however, were dropped in the data cleaning process.
+
+#### Numerical Transformation
+
+| **Feature**      | **Evaluation**                                                                                   | **Transformation used**                                                                                       |
+|-------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| TotalBsmtSF       | The mean imputation method was most effective for handling missing values.                  | MeanMedianImputer                                                            |
+| GrLivArea         | Applying logarithmic transformation was most effective to normalize | LogTransformer.                                                                                               |
+| TotalBsmtSF       | Power transformation was most effective to normalize | PowerTransformer.                                                                                             |
+| TotalBsmtSF, GarageArea | Winsorizing with the IQR method was most effective to handle outliers | Winsorizer                                         |
+| TotalBsmtSF, GrLivArea, GarageArea | Standard scaling was most effective to normalize feature ranges | StandardScaler.                                                                                              |
 
 ## 8. Dashboard Design
 
@@ -557,10 +573,10 @@ the underlying project goal
 
 The image used at the start of the README was created with Mult Device Website Mockup generator Techsini
 
-## Acknowledgements (optional)
+### **Content**
 
-* In case you would like to thank the people that provided support through this project
-  
-  
+- The iniital draft of this documentation was taken from a code repository [code repository](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) provided by the [Code Institute](https://codeinstitute.net)
 
+## Acknowledgements
 
+* I want to thank my mentor, Mo Shami, for the support on the project.
