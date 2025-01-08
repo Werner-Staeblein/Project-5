@@ -424,14 +424,23 @@ SalePrice and each (important) created different types of plots
 
 ## Page 4: Hypothesis
 
-- Display the project hypothesis and the hypothesis were validated across the project
+![Screenshot Project Hypothesis and Validation](docs/readmescreenshots/project_hypothesis_and_validation_page.png)
 
-o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as '1stFlrSF', 'GarageArea', 'GrLivArea' 'TotalBsmtSF' proven to be meaningfully correlated in correlation study</span>
+First Hypothesis: **Size Hypothesis** 
+We hypothesize that larger properties tend to have higher absolute sale prices.
 
-o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as 'KitchenQual_TA' and 'OverallQual' proven to be meaningfully correlated in correlation study</span>
+Hypothesis confirmed: The correlation study shows that features that capture the size of a property 
+such as '1stFlrSF', 'GarageArea', 'GrLivArea' 'TotalBsmtSF' have proven to be positively and moderately correlated with sale price.
 
-o	<span style="color:red; font-weight: bold;">Validation Result: Hypothesis confirmed. Features such as 'YearBuilt' and 'YearRemodAdd' that reflect overall condition have proven to be meaningfully correlated in correlation study</span>
+Second Hypothesis: **Quality Hypothesis** 
+We suspect that the overall quality of a house will significantly impact the sale price. The higher the quality rating, the higher the expected sale/market price.
 
+Hypothesis confirmed: The correlation between sale price and features such as 'KitchenQual_TA' and 'OverallQual' showed that hypothesis cannot be proven wrong and is likely correct.
+
+Third Hypothesis: **Overall Condition Hypothesis** 
+We suspect that the overall condition of a house will influence the sale price. Houses in better condition should command a higher price.
+
+Hypothesis confirmed: The hypothesis was validated with correlations between the sale price and features such as 'YearBuilt' or 'YearRemodAdd'. These features correlated positively and moderately with sale price.
 
 ## Page 5: Technical Page | Model Performance Page
 
