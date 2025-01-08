@@ -497,7 +497,7 @@ Steps for deployment on Heroku are:
 6. If the slug size is too large then add large files not required for the app to the .slugignore file. The code in this project has a sufficiently slug size for the application to be deployed with no problems.
 
 ## 12. Packages and technologies used
-                                                           
+                                        
 ### Technologies used:
 
 **[Git](https://git-scm.com/)** The version control system Git was used to document the development of the application and to push code to the GitHub repository. The specific reasons for the commit are reflected in the respective commit message
