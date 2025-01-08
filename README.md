@@ -413,10 +413,14 @@ SalePrice and each (important) created different types of plots
 
 ## Page 3: House Price Predictor Page
 
-- Describe business requirement No. 2
-- Display the 4 houses's attributes and their respective predicted sales price
-- Show information on the sum of predicted sales prices for all 4 inherited houses
+![Screenshot House Price Predictor Page](docs/readmescreenshots/screenshot_house_price_prediction.png)
+
+- The page displays the four houses's attributes and their respective predicted sales price
+- The sum of predicted sales prices for all four inherited houses is shown
 - Interactive widgets to allow a user to provide real-time house data to predict the sale price on a any given house
+- Manual testing was done on the widgets to verify that the feature order works correctly **[Widget Input Testing](#widget-input-testing)** 
+- Sanity checks were done on the predictions of individual houses prices
+**[Sanity Check on Regression Model](#sanity-check-on-regression-model)**
 
 ## Page 4: Hypothesis
 
@@ -465,10 +469,12 @@ In my view, the deployment issues were primarily related to the fact that I had 
 ### Sanity Check on Regression Model
 
 I performed a manual sanity check on the regression model by comparing the predicted **SalePrice** with the known **SalePrice** in the dataset.  
-This sanity check verifies that the model's calculations align with the underlying dataset.  
+This sanity check verifies that the model's calculations align with the underlying dataset.
+
 This approach of "heuristically" cross-checking the regression outcomes helps ensure that model predictions and the assumptions made during the pipeline definition of the ML model are logical and consistent.
 
 - **Manually comparing SalePrice values:** Cross-checked the predicted SalePrice with the actual SalePrice for several records in the dataset.
+  
 - **Feature validation:** Verified if the features determined to be of importance correlate logically with the SalePrice.
 
 ## 11. Deployment
