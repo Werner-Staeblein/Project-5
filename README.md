@@ -6,6 +6,8 @@ This project aims to understand and predict house prices by analyzing various fa
 
 The project is deployed here: **[Deployed Project](https://ameshouseproject-2e20e722aa63.herokuapp.com/)**
 
+The project's repository can be accessed here: **[GitHub Repository](https://github.com/Werner-Staeblein/Project-5)**
+
 # Table of Contents
 - [Table of Contents](#table-of-contents)
   - [1. Dataset Content](#1-dataset-content)
