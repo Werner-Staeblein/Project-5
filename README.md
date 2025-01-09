@@ -30,6 +30,8 @@ The project is deployed here: **[Deployed Project](https://ameshouseproject-2e20
   - [Page 3: House Price Predictor Page](#page-3-house-price-predictor-page)
   - [Page 4: Hypothesis](#page-4-hypothesis)
   - [Page 5: Technical Page | Model Performance Page](#page-5-technical-page--model-performance-page)
+    - [R2 Explanation](#r2-explanation)
+    - [Performance Evaluation](#performance-evaluation)
   - [9. Fixed Bugs | Deployment challenges](#9-fixed-bugs--deployment-challenges)
     - [Seeking advice](#seeking-advice)
     - [What was the key reason for the bug(s)?](#what-was-the-key-reason-for-the-bugs)
@@ -444,8 +446,18 @@ Hypothesis confirmed: The hypothesis was validated with correlations between the
 
 ## Page 5: Technical Page | Model Performance Page
 
-- Display model performance
-- Display ML pipeline steps  
+![ML model dashboard page part 1](docs/readmescreenshots/machine_learning_model_screenshot_part1.png)
+
+![ML model dashboard page part 1](docs/readmescreenshots/machine_learning_model_screenshot_part2.png)
+
+### R2 Explanation
+The R2 score measures the proportion of variance in the target variable explained by the model. A R2 score closer to 1 indicates high predictive power
+
+### Performance Evaluation
+- The agreed minimum R2 score of **0.75** was met for both the train (**0.88**) and test (**0.791**) sets, demonstrating strong model performance  
+- The Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) indicate that prediction errors are within an acceptable range. There are slightly higher error values on the test set compared to the train set
+
+- The technical page describe the ML pipeline steps applied
 
 ## 9. Fixed Bugs | Deployment challenges
 
@@ -462,7 +474,7 @@ In my view, the deployment issues were primarily related to the fact that I had 
 ### Lessons Learned
 - While some information about Heroku error messages was readily available online, solving the deployment issues often required extensive notes and analysis.
 - I focused on understanding which package versions in the `requirements.txt` file were incompatible with others and systematically addressed the conflicts.
-- Despite the struggles on deployment, I will nevertheless continue to work on deployment at every start of every project and continue with my personal habit of cross-checking deployment while working on a project.
+- Despite the struggles on deployment, I will nevertheless continue to work on deployment at every start of every new project and continue with my personal habit of cross-checking deployment while working on a project.
 
 ## 10. Manual Testing
 
@@ -588,7 +600,7 @@ The image used at the start of the README was created with Mult Device Website M
 
 ### **Content**
 
-- The iniital draft of this documentation was taken from a code repository [code repository](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) provided by the [Code Institute](https://codeinstitute.net)
+- The iniital draft of this documentation was taken from a code repository **[code repository](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues)** provided by **[Code Institute](https://codeinstitute.net)**
 
 ## Acknowledgements
 
