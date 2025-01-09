@@ -464,7 +464,6 @@ In my view, the deployment issues were primarily related to the fact that I had 
 - I focused on understanding which package versions in the `requirements.txt` file were incompatible with others and systematically addressed the conflicts.
 - Despite the struggles on deployment, I will nevertheless continue to work on deployment at every start of every project and continue with my personal habit of cross-checking deployment while working on a project.
 
-
 ## 10. Manual Testing
 
 ### Widget input testing
@@ -477,8 +476,7 @@ In my view, the deployment issues were primarily related to the fact that I had 
 
 ### Sanity Check on Regression Model
 
-I performed a manual sanity check on the regression model by comparing the predicted **SalePrice** with the known **SalePrice** in the dataset.  
-This sanity check verifies that the model's calculations align with the underlying dataset.
+I performed a manual sanity check on the regression model by comparing the predicted **SalePrice** with the known **SalePrice** in the dataset. This sanity check verifies that the model's calculations align with the underlying dataset.
 
 This approach of "heuristically" cross-checking the regression outcomes helps ensure that model predictions and the assumptions made during the pipeline definition of the ML model are logical and consistent.
 
