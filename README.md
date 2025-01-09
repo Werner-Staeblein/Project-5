@@ -450,6 +450,8 @@ Hypothesis confirmed: The hypothesis was validated with correlations between the
 
 ![ML model dashboard page part 1](docs/readmescreenshots/machine_learning_model_screenshot_part2.png)
 
+The model performance page addresses business requirement No. 2. The dashboard page allows the client to predict the house sale price for her four inherited houses and any other house in Ames, Iowa.
+
 ### R2 Explanation
 The R2 score measures the proportion of variance in the target variable explained by the model. A R2 score closer to 1 indicates high predictive power
 
@@ -600,7 +602,7 @@ The image used at the start of the README was created with Mult Device Website M
 
 ### **Content**
 
-- The iniital draft of this documentation was taken from a code repository **[code repository](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues)** provided by **[Code Institute](https://codeinstitute.net)**
+- The iniital draft of this documentation was taken from a **[code repository](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues)** provided by **[Code Institute](https://codeinstitute.net)**
 
 ## Acknowledgements
 
